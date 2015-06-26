@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular demo application</title>
+		<script src="../angular.js"></script>
+	</head>
+
+	<body>	
+
+		<h1>Pagina di esempio</h1>
+
+		<div ng-app ng-init="cities = [
+			{ name: 'Rome', country: 'Italy' },
+			{ name: 'Paris', country: 'France' },
+			{ name: 'Berlin', country: 'Germany' },
+			{ name: 'London', country: 'United Kingdom' }
+			]">
+
+			<ul>
+				<li ng-repeat="city in cities">
+					<strong>{{::city.name}}</strong> ({{::city.country}})
+				</li>
+			</ul>
+
+		</div>
+
+	</body>
+</html>

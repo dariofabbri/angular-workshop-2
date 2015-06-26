@@ -1,0 +1,11 @@
+<div ng-show="city">
+	<h2>Città: {{city.name}}</h2>
+
+	<div>Paese: {{city.country['ISO3166-1-Alpha-3']}} ({{city.country.name}})</div>
+	<div>Abitanti: {{city.population}}</div>
+	<div>Latitudine: {{city.lat}}</div>
+	<div>Longitudine: {{city.lon}}</div>
+
+	<ui-gmap-google-map center='map.center' zoom='map.zoom'></ui-gmap-google-map>
+
+</div>

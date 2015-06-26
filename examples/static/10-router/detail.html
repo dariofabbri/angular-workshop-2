@@ -1,0 +1,10 @@
+<div ng-show="city">
+	<h2>Città: {{city.name}}</h2>
+
+	<div>Paese: {{city.country['ISO3166-1-Alpha-3']}} ({{city.country.name}})</div>
+	<div>Abitanti: {{city.population}}</div>
+	<div>Latitudine: {{city.lat}}</div>
+	<div>Longitudine: {{city.lon}}</div>
+</div>
+
+<a href="#/list">Torna alla lista</a>

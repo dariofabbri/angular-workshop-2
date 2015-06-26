@@ -1,0 +1,42 @@
+<html>
+
+	<script>
+		function calculateAmount(row) {
+			var price = document.forms['myForm']['price' + row].value;
+			var quantity = document.forms['myForm']['quantity' + row].value;
+			var amount = (price && quantity) ? price * quantity : '';
+			document.forms['myForm']['amount' + row].value = amount;
+		}
+	</script>
+
+	<body>
+
+		<form name="myForm" action="process.do" method="post">
+			<table>
+				<tr>
+					<th>Prodotto</th>
+					<th>Prezzo unitario</th>
+					<th>Quantità</th>
+					<th>Importo</th>
+				</tr>
+				<tr>
+					<td><input type="text" name="product1"></td>
+					<td><input type="text" name="price1" onblur="calculateAmount(1)"></td>
+					<td><input type="text" name="quantity1" onblur="calculateAmount(1)"></td>
+					<td><input type="text" name="amount1" readonly></td>
+				</tr>
+				<tr>
+					<td><input type="text" name="product2"></td>
+					<td><input type="text" name="price2" onblur="calculateAmount(2)"></td>
+					<td><input type="text" name="quantity2" onblur="calculateAmount(2)"></td>
+					<td><input type="text" name="amount2"></td>
+				</tr>
+			</table>
+
+			<input type="submit" value="Submit form">
+		</form>
+
+	</body>
+
+</html>
+

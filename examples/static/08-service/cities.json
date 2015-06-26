@@ -1,0 +1,12 @@
+[
+  { "name": "Rome", "country": "Italy", "addedOn": "2015-05-31T22:00:00.000Z" },
+  { "name": "Athens", "country": "Greece", "addedOn": "2015-06-01T22:00:00.000Z" },
+  { "name": "Madrid", "country": "Spain", "addedOn": "2015-06-02T22:00:00.000Z" },
+  { "name": "Paris", "country": "France", "addedOn": "2015-06-03T22:00:00.000Z" },
+  { "name": "Bern", "country": "Switzerland", "addedOn": "2015-06-04T22:00:00.000Z" },
+  { "name": "Berlin", "country": "Germany", "addedOn": "2015-06-05T22:00:00.000Z" },
+  { "name": "Copenhagen", "country": "Denmark", "addedOn": "2015-06-06T22:00:00.000Z" },
+  { "name": "London", "country": "United Kingdom", "addedOn": "2015-06-07T22:00:00.000Z" },
+  { "name": "Lisbon", "country": "Portugal", "addedOn": "2015-06-08T22:00:00.000Z" },
+  { "name": "Reykjavik", "country": "Iceland", "addedOn": "2015-06-09T22:00:00.000Z" }
+]

@@ -1,0 +1,13 @@
+<div ng-show="city">
+	<h2>Città: <input ng-model="city.name"></h2>
+
+	<div>Paese: <select ng-options="country as country.name for country in countries track by country['ISO3166-1-Alpha-3']" ng-model="city.country"></select></div>
+	<div>Abitanti: <input ng-model="city.population"></div>
+	<div>Latitudine: <input ng-model="city.lat"></div>
+	<div>Longitudine: <input ng-model="city.lon"></div>
+	<div><button ng-click="doUpdate()">Aggiorna dati</button></div>
+	<ui-gmap-google-map center="map.center" events="map.events" zoom="map.zoom"></ui-gmap-google-map>
+
+</div>
+
+<a href="#/list">Torna alla lista</a>

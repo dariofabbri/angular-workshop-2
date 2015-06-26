@@ -1,0 +1,22 @@
+<html>
+
+	<head>
+		<script>
+			function validateForm() {
+				var x = document.forms['myForm']['name'].value;
+				if (!x) {
+					alert('Name field is mandatory.');
+					return false;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<form name="myForm" action="process.do" onsubmit="return validateForm()" method="post">
+			Name: <input type="text" name="name">
+			<input type="submit" value="Submit form">
+		</form>
+	</body>
+
+</html>

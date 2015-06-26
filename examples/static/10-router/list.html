@@ -1,0 +1,19 @@
+<button ng-click="loadCities()">Carica dati</button>
+
+<h2>Risultati della ricerca</h2>
+
+<div ng-show="cities">
+
+	<p>Trovate {{cities.length}} città</p>
+
+	<div ng-repeat="city in cities">
+		<h2>Città: {{city.name}}</h2>
+
+		<div>Paese: {{city.country['ISO3166-1-Alpha-3']}} ({{city.country.name}})</div>
+		<div>Abitanti: {{city.population}}</div>
+		<p/>
+		<a href="#/detail/{{city.id}}">Vai al dettaglio</a>
+		<hr>
+	</div>
+
+</div>

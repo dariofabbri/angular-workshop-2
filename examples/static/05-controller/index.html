@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular demo application</title>
+		<script src="../angular.js"></script>
+		<script src="app.js"></script>
+		<script src="demoController.js"></script>
+	</head>
+
+	<body>
+
+		<h1>Pagina di esempio</h1>
+
+		<div ng-app="demoApp" ng-controller="DemoCtrl">
+
+			<ul>
+				<li ng-repeat="city in cities">
+					<strong>{{::city.name}}</strong> ({{::city.country}})
+				</li>
+			</ul>
+
+			<div>
+				<h2>Aggiungi una città:</h2>
+				Città:<input ng-model="newCity"><br>
+				Paese:<input ng-model="newCountry"><br>
+				<button ng-click="addNewCity()">Aggiungi</button>
+			</div>
+
+		</div>
+
+	</body>
+</html>

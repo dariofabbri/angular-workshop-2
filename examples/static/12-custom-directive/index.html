@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular demo application</title>
+
+		<link rel="stylesheet" type="text/css" href="app.css">
+
+		<script src="../angular.js"></script>
+		<script src="../angular-route.js"></script>
+		<script src='../lodash.js'></script>
+		<script src='//maps.googleapis.com/maps/api/js?sensor=false'></script>
+		<script src='../angular-google-maps.js'></script>
+		<script src="app.js"></script>
+		<script src="customService.js"></script>
+		<script src="listController.js"></script>
+		<script src="detailController.js"></script>
+		<script src="listItem.js"></script>
+		<script src="city.js"></script>
+	</head>
+
+	<body ng-app="demoApp">
+
+		<h1>Città del mondo</h1>
+
+		<div ng-view>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+	<body>
+
+		<p id="p01">
+			Lorem ipsum dolor sit amet
+		</p>
+
+		<p id="p02">
+			<span>Ciao</span>
+			<span>a</span>
+			<span>tutti</span>
+		</p>
+
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				$('p#p02 > span:last-child').html('voi').css('color', 'red');
+			});
+		</script>
+	</body>
+</html>

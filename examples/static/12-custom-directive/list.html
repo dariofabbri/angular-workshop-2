@@ -1,0 +1,11 @@
+<button ng-click="loadCities()">Carica dati</button>
+
+<h2>Risultati della ricerca</h2>
+
+<div ng-show="cities">
+
+	<p>Trovate {{cities.length}} città</p>
+
+	<div ng-repeat="city in cities" list-item />
+
+</div>

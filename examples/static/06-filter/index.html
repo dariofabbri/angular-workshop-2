@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular demo application</title>
+		<script src="../angular.js"></script>
+		<script src="app.js"></script>
+		<script src="demoController.js"></script>
+	</head>
+
+	<body>
+
+		<h1>Lista delle città</h1>
+
+		<div ng-app="demoApp" ng-controller="DemoCtrl">
+
+			<table>
+				<tr>
+					<th>Città</th>
+					<th>Paese</th>
+					<th>Aggiunta il</th>
+				</tr>
+				<tr ng-repeat="city in cities">
+					<td>{{city.name}}</td>
+					<td>{{city.country | uppercase}}</td>
+					<td>{{city.addedOn | date : 'dd/MM/yyyy'}}</td>
+				</tr>
+			</table>
+
+		</div>
+
+	</body>
+</html>

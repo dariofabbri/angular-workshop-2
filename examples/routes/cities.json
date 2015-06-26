@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Roma",
+    "country": "ITA",
+    "population": 2874038,
+    "lon": 12.482778,
+    "lat": 41.893056
+  },
+  {
+    "id": 2,
+    "name": "Paris",
+    "country": "FRA",
+    "population": 2274880,
+    "lon": 2.351944,
+    "lat": 48.856667
+  },
+  {
+    "id": 3,
+    "name": "Madrid",
+    "country": "ESP",
+    "population": 3165235,
+    "lon": -3.683333,
+    "lat": 40.433333
+  },
+  {
+    "id": 4,
+    "name": "Berlin",
+    "country": "DEU",
+    "population": 3419623,
+    "lon": 13.408056,
+    "lat": 52.518611
+  }
+]

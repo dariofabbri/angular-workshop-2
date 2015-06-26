@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular demo application</title>
+		<script src="../angular.js"></script>
+		<script src="app.js"></script>
+		<script src="demoController.js"></script>
+		<script src="customService.js"></script>
+	</head>
+
+	<body>
+
+		<h1>Una città a caso</h1>
+
+		<div ng-app="demoApp" ng-controller="DemoCtrl">
+
+			<button ng-click="getRandomCity()">Una città, grazie!</button>
+
+			<div ng-show="city">
+				<h2>Città: {{city.name}}</h2>
+
+				<p>Paese: {{city.country['ISO3166-1-Alpha-3']}} ({{city.country.name}})</p>
+				<p>Abitanti: {{city.population}}</p>
+			</div>
+
+		</div>
+
+	</body>
+</html>

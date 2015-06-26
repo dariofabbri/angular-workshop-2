@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Angular demo application</title>
+		<script src="../angular.js"></script>
+		<script src="app.js"></script>
+		<script src="randomService.js"></script>
+		<script src="demoController.js"></script>
+		<script src="mondrian.js"></script>
+	</head>
+
+	<body ng-app="demoApp" ng-controller="DemoCtrl">
+
+		<h1>Generatore di opere di Piet Mondrian</h1>
+
+		<div style="float: left;">
+			<mondrian/>
+		</div>
+		<div style="float: right">
+			<img src="mondrian.jpg">
+		</div>
+
+		<p>
+			<button ng-click="generate()">Un altro, per favore!</button>
+		</p>
+
+	</body>
+</html>
